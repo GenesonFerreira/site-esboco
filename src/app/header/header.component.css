@@ -1,0 +1,138 @@
+/* Definção da margem do corpo será 0, removendo qualquer margem padrão */
+body {
+    margin: 0; /* Remove qualquer margem padrão do corpo */
+    font-family: Arial, sans-serif; /* definição de letras usadas*/
+    padding: 0; /* Remova qualquer preenchimento padrão do corpo */
+}
+
+/* Estilização o cabeçalho */
+.main-header {
+    background-color: #333; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
+    padding: 20px; /* Define o preenchimento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    position: fixed; /* Fixa o cabeçalho na parte superior da tela */
+    top: 0; /* Define a posição superior */
+    left: 0; /* Define a posição à esquerda */
+    width: 100vw; /* Define a largura como 100% da largura da tela */
+    z-index: 1000; /* Define a ordem de empilhamento */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total */
+}
+
+/* Remove a margem superior do título */
+.main-header__title {
+    margin: 0; /* Remove qualquer margem padrão do corpo */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* definição de letras usadas*/
+    font-size: 60px; /* Novo tamanho da fonte, aumentado para 30 pixels */
+}
+
+
+/* Remove os estilos padrão da lista de itens de menu */
+.menu-list {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estilização dos itens de menu */
+.menu-item {
+    display: inline-block; /* Exibe os itens lado a lado */
+    margin-right: 30px; /* Adiciona margem à direita entre os itens */
+}
+/* Estilos para a caixa de Produtos */
+.menu-item.produtos {
+    background-color: #505050;
+}
+
+/* Estilos para a caixa de Carrinho */
+.menu-item.carrinho {
+    background-color: #505050;
+}
+
+/* Estilos para a caixa de Contatos */
+.menu-item.contatos {
+    background-color: #505050;
+}
+
+/* Estilos para a caixa de Facebook */
+.menu-item.facebook {
+    background-color: #505050;
+}
+
+/* Estilos para a caixa de Instagram */
+.menu-item.instagram {
+    background-color: #505050;
+}
+
+/* Estilos para a caixa de GitHub */
+.menu-item.github {
+    background-color: #505050;
+}
+
+/* Estilos comuns para todos os itens do menu */
+.menu-item {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para o texto dos links */
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para os links quando passa o mouse sobre eles */
+.menu-link:hover {
+    color: #000;
+}
+
+
+/* Estilização dos links do menu */
+.menu-link {
+    color: #ffffff; /* Define a cor do texto */
+    text-decoration: none; /* Remove a sublinhado padrão dos links */
+    display: inline-block; /* Permite que os links se comportem como blocos */
+    transition: color 0.3s ease; /* Adiciona uma transição suave de cor */
+}
+
+/* Estilização dos links do menu quando passa o mouse sobre eles */
+.menu-link:hover {
+    color: #1d7eb2; /* Muda a cor do texto ao passar o mouse sobre os links */
+}
+
+/* Estilos para o formulário de pesquisa */
+.search-form {
+    text-align: center; /* Alinha o conteúdo do formulário ao centro */
+    margin-top: 20px; /* Adiciona margem superior */
+}
+
+/* Estilos para a caixa de entrada de pesquisa */
+.search-input {
+    padding: 10px; /* Adiciona preenchimento */
+    border: 1px solid #ffffff; /* Adiciona uma borda sólida */
+    border-radius: 8px; /* Adiciona borda arredondada */
+    width: 250px; /* Define a largura */
+}
+
+/* Estilos para o botão de pesquisa */
+.search-button {
+    padding: 10px; /* Adiciona preenchimento */
+    border: none; /* Remove a borda */
+    background-color: #ffffff; /* Define a cor de fundo */
+    color: #000000; /* Define a cor do texto */
+    border-radius: 5px; /* Adiciona borda arredondada */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor de fundo */
+    margin-left: 6px;
+}
+
+/* Estilos para o ícone do botão de pesquisa */
+.search-button .fa-magnifying-glass {
+    font-size: 20px; /* Define o tamanho do ícone */
+}
+
+/* Estilos para o botão de pesquisa quando passa o mouse sobre ele */
+.search-button:hover {
+    background-color: #1d7eb2; /* Muda a cor de fundo ao passar o mouse sobre o botão */
+}
