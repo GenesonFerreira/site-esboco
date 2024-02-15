@@ -1,0 +1,61 @@
+.footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Preenchimento interno reduzido */
+    text-align: center; /* Alinhamento do texto ao centro */
+    position: fixed; /* Posicionamento fixo */
+    bottom: 0; /* Alinha o rodapé na parte inferior */
+    left: 0; /* Alinha o rodapé à esquerda */
+    width: 100%; /* Largura total */
+    z-index: 999; /* Garante que o rodapé esteja acima de outros elementos */
+}
+
+.footer__container {
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+    display: flex; /* Permite que os elementos filhos se comportem como flex items */
+    justify-content: space-between; /* Distribui os elementos filhos igualmente ao longo do container */
+}
+
+.footer__section-about,
+.footer__section-contact {
+    flex-basis: 100%; /* Define a largura dos elementos de seção */
+}
+
+.footer__title {
+    font-size: 18px; /* Tamanho da fonte do título reduzido */
+    margin-bottom: 10px; /* Margem inferior aumentada */
+}
+
+.footer__about-text {
+    font-size: 14px; /* Tamanho da fonte do texto de descrição reduzido */
+}
+
+.footer__contact-list {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+.footer__contact-item {
+    display: inline-block; /* Exibe os itens de contato lado a lado */
+    margin-right: 20px; /* Adiciona margem à direita entre os itens de contato */
+}
+
+.footer__contact-item:last-child {
+    margin-right: 0; /* Remove a margem à direita do último item de contato */
+}
+
+.footer__contact-icon {
+    font-size: 20px; /* Tamanho do ícone de contato */
+    margin-right: 5px; /* Margem à direita do ícone de contato reduzida */
+}
+
+.footer__contact-link {
+    color: #fff; /* Cor do texto dos links de contato */
+    text-decoration: none; /* Remove a decoração de link */
+    transition: color 0.3s ease; /* Adiciona uma transição suave de cor */
+}
+
+.footer__contact-link:hover {
+    color: #ffc107; /* Cor do texto ao passar o mouse sobre os links de contato */
+}
