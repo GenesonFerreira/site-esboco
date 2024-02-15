@@ -1,13 +1,14 @@
 .footer {
     background-color: #333; /* Cor de fundo do rodapé */
     color: #fff; /* Cor do texto */
-    padding: 10px 20px; /* Preenchimento interno reduzido */
+    padding: 5px 20px; /* Preenchimento interno reduzido */
     text-align: center; /* Alinhamento do texto ao centro */
     position: fixed; /* Posicionamento fixo */
     bottom: 0; /* Alinha o rodapé na parte inferior */
     left: 0; /* Alinha o rodapé à esquerda */
     width: 100%; /* Largura total */
     z-index: 999; /* Garante que o rodapé esteja acima de outros elementos */
+    max-height: 60px; /* Altura máxima do rodapé */
 }
 
 .footer__container {
@@ -19,16 +20,17 @@
 
 .footer__section-about,
 .footer__section-contact {
-    flex-basis: 100%; /* Define a largura dos elementos de seção */
+    flex-basis: calc(50% - 20px); /* Define a largura dos elementos de seção */
+    margin-bottom: 10px; /* Adiciona margem inferior entre as seções */
 }
 
 .footer__title {
-    font-size: 18px; /* Tamanho da fonte do título reduzido */
-    margin-bottom: 10px; /* Margem inferior aumentada */
+    font-size: 16px; /* Tamanho da fonte do título reduzido */
+    margin-bottom: 5px; /* Margem inferior aumentada */
 }
 
 .footer__about-text {
-    font-size: 14px; /* Tamanho da fonte do texto de descrição reduzido */
+    font-size: 12px; /* Tamanho da fonte do texto de descrição reduzido */
 }
 
 .footer__contact-list {
@@ -46,7 +48,7 @@
 }
 
 .footer__contact-icon {
-    font-size: 20px; /* Tamanho do ícone de contato */
+    font-size: 16px; /* Tamanho do ícone de contato */
     margin-right: 5px; /* Margem à direita do ícone de contato reduzida */
 }
 
