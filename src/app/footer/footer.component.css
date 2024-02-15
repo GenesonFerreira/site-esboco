@@ -1,63 +1,67 @@
+/* Estilo do footer */
+/* Estilo do footer */
 .footer {
-    background-color: #333; /* Cor de fundo do rodapé */
+    background-color: #333; /* Cor de fundo */
     color: #fff; /* Cor do texto */
-    padding: 5px 20px; /* Preenchimento interno reduzido */
-    text-align: center; /* Alinhamento do texto ao centro */
-    position: fixed; /* Posicionamento fixo */
-    bottom: 0; /* Alinha o rodapé na parte inferior */
-    left: 0; /* Alinha o rodapé à esquerda */
+    padding: 2px 10px; /* Espaçamento interno */
+    position: fixed; /* Posição fixa para permanecer na parte inferior */
+    bottom: 0; /* Alinhar no fundo */
+    left: 0; /* Alinhar à esquerda */
     width: 100%; /* Largura total */
-    z-index: 999; /* Garante que o rodapé esteja acima de outros elementos */
-    max-height: 60px; /* Altura máxima do rodapé */
+    text-align: center; /* Centralizar o conteúdo */
 }
 
+/* Estilo do container do footer */
 .footer__container {
-    max-width: 1200px; /* Largura máxima do container */
-    margin: 0 auto; /* Centraliza o container na página */
-    display: flex; /* Permite que os elementos filhos se comportem como flex items */
-    justify-content: space-between; /* Distribui os elementos filhos igualmente ao longo do container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+/* Estilo da seção "Sobre" e "Contato" */
 .footer__section-about,
 .footer__section-contact {
-    flex-basis: calc(50% - 20px); /* Define a largura dos elementos de seção */
-    margin-bottom: 10px; /* Adiciona margem inferior entre as seções */
+    flex: 1;
 }
 
+/* Estilo do título da seção */
 .footer__title {
-    font-size: 16px; /* Tamanho da fonte do título reduzido */
-    margin-bottom: 5px; /* Margem inferior aumentada */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
+/* Estilo do texto de descrição */
 .footer__about-text {
-    font-size: 12px; /* Tamanho da fonte do texto de descrição reduzido */
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
+/* Estilo da lista de contatos */
+/* Estilo da lista de contatos */
 .footer__contact-list {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o preenchimento padrão da lista */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+/* Estilo dos itens de contato */
 .footer__contact-item {
-    display: inline-block; /* Exibe os itens de contato lado a lado */
-    margin-right: 20px; /* Adiciona margem à direita entre os itens de contato */
+    margin-right: 20px; /* Espaçamento entre os itens */
 }
 
-.footer__contact-item:last-child {
-    margin-right: 0; /* Remove a margem à direita do último item de contato */
-}
-
+/* Estilo dos ícones de contato */
 .footer__contact-icon {
-    font-size: 16px; /* Tamanho do ícone de contato */
-    margin-right: 5px; /* Margem à direita do ícone de contato reduzida */
+    font-size: 1.2rem;
+    margin-right: 5px; /* Espaçamento entre o ícone e o link */
 }
 
+/* Estilo dos links de contato */
 .footer__contact-link {
-    color: #fff; /* Cor do texto dos links de contato */
-    text-decoration: none; /* Remove a decoração de link */
-    transition: color 0.3s ease; /* Adiciona uma transição suave de cor */
-}
-
-.footer__contact-link:hover {
-    color: #ffc107; /* Cor do texto ao passar o mouse sobre os links de contato */
+    color: #fff;
+    text-decoration: none;
 }
