@@ -1,14 +1,14 @@
 <section class="product__container">
     <div class="product-image__container">
-        <img src="/site-esboco/src/assets/monitor-1.jpg" alt="IMAGEM">
+        <img [src]="produto?.imagem" alt="IMAGEM">
     </div>
     <div class="product-description__container">
-        <h2 class="product__name"> Teste de descrição </h2>
-        <h2 class="product__price"> Teste de preco </h2>
+        <h2 class="product__name"> {{produto?.descricao}} </h2>
+        <h2 class="product__price"> {{produto?.preco | currency:"BRL"}}</h2>
         <p class="product__disponibility"> Estoque disponivel</p>
         <label> 
             quantidade
-            <input type="number">
+            <input type="number" [(ngModel)]="quantidade" min="1">
             unidade (s)
         </label>
         <p class="product__avaiability">
