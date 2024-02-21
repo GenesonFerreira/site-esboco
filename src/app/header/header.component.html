@@ -8,12 +8,17 @@
 
         <ul class="menu-list"> <!-- Lista de itens do menu -->
 
-            <li class="menu-item produtos"> <!-- Item de menu "Produtos" -->
+            <li class="menu-item  produtos"> <!-- Item de menu "Produtos" -->
                 <a class="menu-link fa-solid fa-tag" href=""> Produtos </a><!-- Link para a página de produtos -->
             </li>
 
-            <li class="menu-item carrinho"><!-- Item de menu "Carrinho" -->
-                <a class="menu-link fa-solid fa-cart-shopping" href=""> Carrinho </a><!-- Link para a página do carrinho -->
+           <!-- Link para a página do carrinho -->
+            <li class="menu-item carrinho"> 
+                <a routerLink="carrinho"><!-- Item de menu "Carrinho" --> 
+                    <a class="menu-link fa-solid fa-cart-shopping">Carrinho - 0
+                        <a class="badge-carrinho">{{carrinhoService.obtemCarrinho().length }} </a>
+                    </a>
+                </a>
             </li>
 
             <li class="menu-item contatos"><!-- Item de menu "Contatos" -->

@@ -1,83 +1,63 @@
-/* Estilização o cabeçalho */
+/* Estilos para o cabeçalho principal */
 .main-header {
-    background-color: rgb(51, 51, 51); /* Define a cor de fundo */
-    color: #fff; /* Define a cor do texto */
-    padding: 12px; /* Define o preenchimento interno */
-    text-align: center; /* Alinha o texto ao centro */
-    position: fixed; /* Fixa o cabeçalho na parte superior da tela */
-    top: 0; /* Alinha o cabeçalho no topo da página */
-    left: 0; /* Alinha o cabeçalho à esquerda da página */
-    width: 100%; /* Largura total */
-    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total */
-    z-index: 1000; /* Define a ordem de empilhamento */
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    display: flex; /* Exibe os elementos em linha */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    align-items: center; /* Alinha os itens verticalmente */
 }
 
-/* Remove a margem superior do título */
+/* Estilos para o título principal */
 .main-header__title {
-    margin: 0; /* Remove qualquer margem padrão do título */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* definição de letras usadas*/
-    font-size: 36px; /* Tamanho da fonte reduzido */
+    font-size: 24px; /* Tamanho da fonte */
+    margin: 0; /* Remove as margens */
 }
 
-/* Remove os estilos padrão da lista de itens de menu */
+/* Estilos para a lista de menu */
 .menu-list {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o preenchimento padrão */
-    margin: 0; /* Remove a margem padrão */
+    list-style: none; /* Remove os marcadores de lista */
+    margin: 0; /* Remove as margens */
+    padding: 0; /* Remove o preenchimento */
+    display: flex; /* Exibe os elementos em linha */
 }
 
-/* Estilização dos itens de menu */
+.menu-item-carrinho .menu-link {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove a decoração de texto padrão */
+}
+
+.menu-item-carrinho .menu-link:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+/* Estilos para os itens de menu */
 .menu-item {
-    display: inline-block; /* Exibe os itens lado a lado */
-    margin-right: 20px; /* Adiciona margem à direita entre os itens */
-    padding: 10px; /* Adiciona preenchimento */
-    border-radius: 5px; /* Adiciona borda arredondada */
+    margin-right: 20px; /* Espaçamento entre os itens */
 }
 
-/* Estilos para o texto dos links */
+/* Estilos para os links do menu */
 .menu-link {
-    color: #fff; /* Define a cor do texto dos links */
-    text-decoration: none; /* Remove a decoração de link */
-    transition: color 0.3s ease; /* Adiciona uma transição suave de cor */
-}
-
-/* Estilização dos links do menu quando passa o mouse sobre eles */
-.menu-link:hover {
-    color: #1d7eb2; /* Muda a cor do texto ao passar o mouse sobre os links */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove a decoração de texto padrão */
 }
 
 /* Estilos para o formulário de pesquisa */
 .search-form {
-    text-align: center; /* Alinha o conteúdo do formulário ao centro */
-    margin-top: 20px; /* Adiciona margem superior */
+    display: flex; /* Exibe os elementos em linha */
 }
 
 /* Estilos para a caixa de entrada de pesquisa */
 .search-input {
-    padding: 10px; /* Adiciona preenchimento */
-    border: 1px solid #ffffff; /* Adiciona uma borda sólida */
-    border-radius: 8px; /* Adiciona borda arredondada */
-    width: 250px; /* Define a largura */
+    padding: 5px; /* Espaçamento interno */
 }
 
 /* Estilos para o botão de pesquisa */
 .search-button {
-    padding: 10px; /* Adiciona preenchimento */
+    background-color: #444; /* Cor de fundo */
     border: none; /* Remove a borda */
-    background-color: #ffffff; /* Define a cor de fundo */
-    color: #000000; /* Define a cor do texto */
-    border-radius: 5px; /* Adiciona borda arredondada */
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor de fundo */
-    margin-left: 6px;
-}
-
-/* Estilos para o ícone do botão de pesquisa */
-.search-button .fa-magnifying-glass {
-    font-size: 20px; /* Define o tamanho do ícone */
-}
-
-/* Estilos para o botão de pesquisa quando passa o mouse sobre ele */
-.search-button:hover {
-    background-color: #1d7eb2; /* Muda a cor de fundo ao passar o mouse sobre o botão */
+    color: #fff; /* Cor do texto */
+    padding: 5px 10px; /* Espaçamento interno */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
 }
