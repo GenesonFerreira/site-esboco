@@ -1,0 +1,93 @@
+/* Estilos para o título da seção de contato */
+.contact__title {
+    margin-top: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px; /* Aumenta o tamanho do título */
+    font-weight: bold; /* Destaca o título */
+    color: #333; /* Cor mais escura para uma aparência mais profissional */
+    
+}
+
+/* Estilos para o container da seção de contato */
+.contact__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para o formulário de contato */
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="assunto"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para as mensagens de erro */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Estilos para o endereço e mapa */
+.address {
+    flex: 1;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o mapa */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o endereço */
+.address p {
+    margin-top: 20px;
+    font-style: italic;
+}
