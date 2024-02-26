@@ -47,17 +47,3 @@
 .search-form {
     display: flex; /* Exibe os elementos em linha */
 }
-
-/* Estilos para a caixa de entrada de pesquisa */
-.search-input {
-    padding: 5px; /* Espaçamento interno */
-}
-
-/* Estilos para o botão de pesquisa */
-.search-button {
-    background-color: #444; /* Cor de fundo */
-    border: none; /* Remove a borda */
-    color: #fff; /* Cor do texto */
-    padding: 5px 10px; /* Espaçamento interno */
-    cursor: pointer; /* Altera o cursor ao passar por cima */
-}

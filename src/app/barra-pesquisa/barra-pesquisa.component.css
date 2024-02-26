@@ -1,0 +1,15 @@
+.search-input {
+    padding: 15px 20px; /* Espaçamento interno */
+    border-radius: 8px;
+    width: 26rem;
+}
+
+/* Estilos para o botão de pesquisa */
+.search-button {
+    background-color: #444; /* Cor de fundo */
+    border: none; /* Remove a borda */
+    color: #fff; /* Cor do texto */
+    padding:15px 25px; /* Espaçamento interno */
+    border-radius: 8px;
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+}

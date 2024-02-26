@@ -3,13 +3,13 @@
     flex-wrap: wrap; /* Permite que os cartões de produtos quebrem para a próxima linha */
     justify-content: center; /* Centraliza os cartões de produtos horizontalmente */
     max-width: 100vw; /* Define a largura máxima do contêiner de lista de produtos */
-    padding: 20px; /* Adiciona preenchimento interno ao contêiner de lista de produtos */
-    margin-top: 180px; /* Define o espaçamento superior em relação ao topo do site */
-    margin-bottom: 90px; /* Define o espaçamento inferior em relação ao footer */
+    padding: 10px; /* Adiciona preenchimento interno ao contêiner de lista de produtos */
+    margin-top: 5px; /* Define o espaçamento superior em relação ao topo do site */
+    margin-bottom: 100px; /* Define o espaçamento inferior em relação ao footer */
 }
 
 .product-list__card {
-    width: calc(18% - 20px); /* Define a largura dos cartões de produtos */
+    width: calc(20% - 20px); /* Define a largura dos cartões de produtos */
     margin: 0 8px 20px; /* Define as margens dos cartões de produtos */
     background-color: transparent; /* Define a cor de fundo dos cartões de produtos */
     border-radius: 8px; /* Define o raio da borda dos cartões de produtos */
