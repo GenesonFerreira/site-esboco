@@ -1,19 +1,19 @@
 .product-list {
-    display: flex; /* Define o contêiner como flexível para alinhar os cartões de produtos */
-    flex-wrap: wrap; /* Permite que os cartões de produtos quebrem para a próxima linha */
-    justify-content: center; /* Centraliza os cartões de produtos horizontalmente */
-    max-width: 100vw; /* Define a largura máxima do contêiner de lista de produtos */
-    padding: 10px; /* Adiciona preenchimento interno ao contêiner de lista de produtos */
-    margin-top: 5px; /* Define o espaçamento superior em relação ao topo do site */
-    margin-bottom: 100px; /* Define o espaçamento inferior em relação ao footer */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribui os espaços entre os cartões */
+    max-width: 100vw;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 100px;
 }
 
 .product-list__card {
     width: calc(20% - 20px); /* Define a largura dos cartões de produtos */
     margin: 0 8px 20px; /* Define as margens dos cartões de produtos */
-    background-color: transparent; /* Define a cor de fundo dos cartões de produtos */
+    background-color: #f7f7f7; /* Define a cor de fundo dos cartões de produtos */
     border-radius: 8px; /* Define o raio da borda dos cartões de produtos */
-    box-shadow: 0 0 10px rgba(51, 51, 51, 0.234); /* Adiciona uma sombra aos cartões de produtos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra aos cartões de produtos */
     transition: transform 0.3s ease; /* Adiciona uma transição suave ao passar o mouse sobre os cartões */
     display: flex; /* Define o layout dos cartões de produtos como flexível */
     flex-direction: column; /* Define a direção dos elementos dentro dos cartões de produtos como coluna */
@@ -21,19 +21,19 @@
 
 @media (max-width: 1200px) {
     .product-list__card {
-        width: calc(25% - 20px); /* Ajusta a largura dos cartões de produtos para telas menores */
+        width: calc(24% - 20px); /* Ajusta a largura dos cartões de produtos para telas médias */
     }
 }
 
 @media (max-width: 992px) {
     .product-list__card {
-        width: calc(33.333% - 20px); /* Ajusta a largura dos cartões de produtos para telas ainda menores */
+        width: calc(32% - 20px); /* Ajusta a largura dos cartões de produtos para telas menores */
     }
 }
 
 @media (max-width: 768px) {
     .product-list__card {
-        width: calc(50% - 20px); /* Ajusta a largura dos cartões de produtos para telas menores */
+        width: calc(48% - 20px); /* Ajusta a largura dos cartões de produtos para telas pequenas */
     }
 }
 
@@ -66,25 +66,25 @@
 }
 
 .product-item__name {
-    font-size: 2.5rem; /* Define o tamanho da fonte do nome do produto */
+    font-size: 22px; /* Define o tamanho da fonte do nome do produto */
     font-weight: bold; /* Define o peso da fonte do nome do produto como negrito */
     text-align: center; /* Centraliza o texto do nome do produto */
-    color: rgb(0, 0, 0); /* Define a cor do texto do nome do produto */
+    color: #333; /* Define a cor do texto do nome do produto */
     margin: 10px 0; /* Define as margens do nome do produto */
     margin-bottom: auto; /* Alinha o nome do produto na parte superior do cartão */
 }
 
 .product-item__price {
-    font-size: 1.8rem; /* Define o tamanho da fonte do preço do produto */
+    font-size: 16px; /* Define o tamanho da fonte do preço do produto */
     margin-bottom: 5px; /* Define as margens inferiores do preço do produto */
     text-align: center; /* Centraliza o texto do preço do produto */
-    color: rgb(0, 0, 0); /* Define a cor do texto do preço do produto */
+    color: #333; /* Define a cor do texto do preço do produto */
     order: 1; /* Define a ordem do preço do produto dentro do cartão */
 }
 
 .product-item__price-description {
-    font-size: 1.4em; /* Define o tamanho da fonte da descrição do preço do produto */
-    color: rgba(0, 0, 0, 0.729); /* Define a cor do texto da descrição do preço do produto */
+    font-size: 1.2rem; /* Define o tamanho da fonte da descrição do preço do produto */
+    color: rgba(0, 0, 0, 0.7); /* Define a cor do texto da descrição do preço do produto */
     margin-bottom: auto; /* Alinha a descrição do preço do produto na parte inferior do cartão */
     text-align: center; /* Centraliza o texto da descrição do preço do produto */
     order: 2; /* Define a ordem da descrição do preço do produto dentro do cartão */
@@ -93,8 +93,8 @@
 .product-item__buy-button {
     width: 100%; /* Define a largura do botão de compra como 100% do contêiner pai */
     padding: 10px; /* Adiciona preenchimento ao botão de compra */
-    background-color: #3d3d3d; /* Define a cor de fundo do botão de compra */
-    color: rgb(255, 255, 255); /* Define a cor do texto do botão de compra */
+    background-color: #007bff; /* Define a cor de fundo do botão de compra */
+    color: #fff; /* Define a cor do texto do botão de compra */
     text-align: center; /* Centraliza o texto do botão de compra */
     border: none; /* Remove a borda do botão de compra */
     border-radius: 3px; /* Define o raio da borda do botão de compra */
@@ -104,6 +104,5 @@
 }
 
 .product-item__buy-button:hover {
-    background-color: rgb(0, 87, 121); /* Altera a cor de fundo do botão de compra ao passar o mouse sobre ele */
-    color: rgb(0, 0, 0); /* Altera a cor do texto do botão de compra ao passar o mouse sobre ele */
+    background-color: #0056b3; /* Altera a cor de fundo do botão de compra ao passar o mouse sobre ele */
 }

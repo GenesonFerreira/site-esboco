@@ -1,5 +1,4 @@
 /* Estilo do footer */
-/* Estilo do footer */
 .footer {
     background-color: #333; /* Cor de fundo */
     color: #fff; /* Cor do texto */
@@ -14,15 +13,15 @@
 /* Estilo do container do footer */
 .footer__container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between; /* Distribui os itens com espaçamento igual */
+    align-items: center; /* Alinha os itens verticalmente */
+    flex-wrap: wrap; /* Permite que os itens se envolvam para a próxima linha */
 }
 
 /* Estilo da seção "Sobre" e "Contato" */
 .footer__section-about,
 .footer__section-contact {
-    flex: 1;
+    flex: 1; /* Os elementos ocupam o espaço disponível igualmente */
 }
 
 /* Estilo do título da seção */
@@ -38,15 +37,14 @@
 }
 
 /* Estilo da lista de contatos */
-/* Estilo da lista de contatos */
 .footer__contact-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove o espaçamento externo */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-wrap: wrap; /* Permite que os itens se envolvam para a próxima linha */
 }
 
 /* Estilo dos itens de contato */
@@ -62,6 +60,6 @@
 
 /* Estilo dos links de contato */
 .footer__contact-link {
-    color: #fff;
-    text-decoration: none;
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove a decoração de link padrão */
 }
